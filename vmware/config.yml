@@ -1,0 +1,15 @@
+default:  # 默认主机
+    vsphere_host: "172.17.41.1"   # vCente管理IP
+    vsphere_user: "administrator@vsphere.local"     # vCente管理员用户
+    vsphere_password: "Q9o%hui12kUTi.s@sc"          # vCente管理员密码
+    ignore_ssl: True
+    specs_size: 5000
+    fetch_custom_attributes: True
+    fetch_tags: True
+    fetch_alarms: True
+    collect_only:
+        vms: True
+        vmguests: True
+        datastores: True
+        hosts: True
+        snapshots: True
